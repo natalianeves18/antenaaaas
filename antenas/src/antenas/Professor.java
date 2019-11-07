@@ -3,6 +3,11 @@ package antenas;
 public class Professor {
 	private String email;
 	private String senha;
+	
+	public Professor(DadosLogin login) {
+		this.email = login.getEmail();
+		this.senha = login.getSenha();
+	}
 
 	public String getEmail() {
 		return this.email;
@@ -17,6 +22,6 @@ public class Professor {
 	}
 
 	public String setSenha(String value) {
-		return this.email = value;
+		return this.senha = value;
 	}
 }
